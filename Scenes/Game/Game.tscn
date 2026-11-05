@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://5rq82ik7i04h"]
 
 [ext_resource type="Script" uid="uid://b6ukuqfnuv275" path="res://Scenes/Game/Game.gd" id="1_3k6gv"]
-[ext_resource type="PackedScene" uid="uid://cql5xay1b52lu" path="res://Scenes/MemoryTile/MemoryTile.tscn" id="1_y3kpf"]
 [ext_resource type="LabelSettings" uid="uid://kg8bj8mibql5" path="res://Resources/LabelWhite24.tres" id="2_3k6gv"]
 [ext_resource type="Texture2D" uid="uid://dk16kfwtqa4yi" path="res://Assets/ui/blue_button00.png" id="3_1q8bt"]
 [ext_resource type="Texture2D" uid="uid://ceu42wmi08uyy" path="res://Assets/ui/green_button00.png" id="4_gvja8"]
@@ -33,54 +32,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 columns = 4
-
-[node name="MemoryTile" parent="HB/GridContainer" unique_id=1935172684 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile2" parent="HB/GridContainer" unique_id=1132480330 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile3" parent="HB/GridContainer" unique_id=1840112110 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile4" parent="HB/GridContainer" unique_id=205008645 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile5" parent="HB/GridContainer" unique_id=706013317 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile6" parent="HB/GridContainer" unique_id=1089643641 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile7" parent="HB/GridContainer" unique_id=391614331 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile8" parent="HB/GridContainer" unique_id=63599114 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile9" parent="HB/GridContainer" unique_id=1170737791 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile10" parent="HB/GridContainer" unique_id=663380621 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile11" parent="HB/GridContainer" unique_id=1345951663 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile12" parent="HB/GridContainer" unique_id=182846173 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile13" parent="HB/GridContainer" unique_id=1401943351 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile14" parent="HB/GridContainer" unique_id=564648887 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile15" parent="HB/GridContainer" unique_id=1511156798 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
-
-[node name="MemoryTile16" parent="HB/GridContainer" unique_id=112589829 instance=ExtResource("1_y3kpf")]
-layout_mode = 2
 
 [node name="Spacer2" type="Control" parent="HB" unique_id=1769444375]
 layout_mode = 2
@@ -154,3 +105,5 @@ label_settings = ExtResource("2_3k6gv")
 [node name="Spacer3" type="Control" parent="HB" unique_id=1333647625]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[connection signal="pressed" from="HB/VB/ExitButton" to="." method="_on_exit_button_pressed"]
