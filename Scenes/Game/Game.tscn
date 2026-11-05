@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://5rq82ik7i04h"]
+
+[ext_resource type="PackedScene" uid="uid://cql5xay1b52lu" path="res://Scenes/MemoryTile/MemoryTile.tscn" id="1_y3kpf"]
+[ext_resource type="LabelSettings" uid="uid://kg8bj8mibql5" path="res://Resources/LabelWhite24.tres" id="2_3k6gv"]
+[ext_resource type="Texture2D" uid="uid://dk16kfwtqa4yi" path="res://Assets/ui/blue_button00.png" id="3_1q8bt"]
+[ext_resource type="Texture2D" uid="uid://ceu42wmi08uyy" path="res://Assets/ui/green_button00.png" id="4_gvja8"]
+[ext_resource type="Texture2D" uid="uid://xk4h4k6palx2" path="res://Assets/ui/yellow_button00.png" id="5_m1o7v"]
+
+[node name="Game" type="Control" unique_id=1973831878]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HB" type="HBoxContainer" parent="." unique_id=1300174908]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Spacer" type="Control" parent="HB" unique_id=1096667766]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="HB" unique_id=1230396898]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 4
+
+[node name="MemoryTile" parent="HB/GridContainer" unique_id=1935172684 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile2" parent="HB/GridContainer" unique_id=1132480330 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile3" parent="HB/GridContainer" unique_id=1840112110 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile4" parent="HB/GridContainer" unique_id=205008645 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile5" parent="HB/GridContainer" unique_id=706013317 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile6" parent="HB/GridContainer" unique_id=1089643641 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile7" parent="HB/GridContainer" unique_id=391614331 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile8" parent="HB/GridContainer" unique_id=63599114 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile9" parent="HB/GridContainer" unique_id=1170737791 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile10" parent="HB/GridContainer" unique_id=663380621 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile11" parent="HB/GridContainer" unique_id=1345951663 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile12" parent="HB/GridContainer" unique_id=182846173 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile13" parent="HB/GridContainer" unique_id=1401943351 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile14" parent="HB/GridContainer" unique_id=564648887 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile15" parent="HB/GridContainer" unique_id=1511156798 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="MemoryTile16" parent="HB/GridContainer" unique_id=112589829 instance=ExtResource("1_y3kpf")]
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="HB" unique_id=1769444375]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VB" type="VBoxContainer" parent="HB" unique_id=52242970]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HB" type="HBoxContainer" parent="HB/VB" unique_id=525779799]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HB/VB/HB" unique_id=713342275]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Moves"
+label_settings = ExtResource("2_3k6gv")
+vertical_alignment = 1
+
+[node name="MovesLabel" type="Label" parent="HB/VB/HB" unique_id=1978479454]
+layout_mode = 2
+text = "000"
+label_settings = ExtResource("2_3k6gv")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HB2" type="HBoxContainer" parent="HB/VB" unique_id=1951970781]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HB/VB/HB2" unique_id=1529976001]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Pairs"
+label_settings = ExtResource("2_3k6gv")
+vertical_alignment = 1
+
+[node name="PairsLabel" type="Label" parent="HB/VB/HB2" unique_id=2088430981]
+layout_mode = 2
+text = "10/10"
+label_settings = ExtResource("2_3k6gv")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="HB/VB" unique_id=415432150]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="ExitButton" type="TextureButton" parent="HB/VB" unique_id=2026699151]
+layout_mode = 2
+texture_normal = ExtResource("3_1q8bt")
+texture_pressed = ExtResource("4_gvja8")
+texture_hover = ExtResource("5_m1o7v")
+
+[node name="Label" type="Label" parent="HB/VB/ExitButton" unique_id=583613660]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -12.5
+offset_right = 23.0
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+label_settings = ExtResource("2_3k6gv")
+
+[node name="Spacer3" type="Control" parent="HB" unique_id=1333647625]
+layout_mode = 2
+size_flags_horizontal = 3

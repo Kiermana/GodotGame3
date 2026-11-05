@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dhg5hikctmh0" path="res://Assets/images/backgroundEmpty.png" id="1_a4gx0"]
 [ext_resource type="PackedScene" uid="uid://c4fyfnu4l4ki7" path="res://Scenes/Main/Main.tscn" id="2_vq23j"]
+[ext_resource type="PackedScene" uid="uid://5rq82ik7i04h" path="res://Scenes/Game/Game.tscn" id="3_vq23j"]
 
 [node name="Master" type="Control" unique_id=976927461]
 layout_mode = 3
@@ -22,4 +23,8 @@ texture = ExtResource("1_a4gx0")
 expand_mode = 1
 
 [node name="Main" parent="." unique_id=981559591 instance=ExtResource("2_vq23j")]
+visible = false
+layout_mode = 1
+
+[node name="Game" parent="." unique_id=1973831878 instance=ExtResource("3_vq23j")]
 layout_mode = 1
