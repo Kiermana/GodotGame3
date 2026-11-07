@@ -25,4 +25,6 @@ func reveal(r: bool) -> void:
 
 
 func _on_pressed() -> void:
+	if !Scorer.SelectionEnabled: return
 	reveal(true)
+	SignalHub._emit_on_tile_selected(self)
